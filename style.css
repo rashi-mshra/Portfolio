@@ -1,0 +1,123 @@
+:root {
+    --rose-gold: #b76e79;
+    --light-grey: #f0f0f0;
+    --silver: #c0c0c0;
+    --dark-grey: #333;
+    --white: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: var(--light-grey);
+    color: var(--dark-grey);
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, var(--rose-gold), var(--dark-grey));
+    color: var(--white);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+nav {
+    background: var(--silver);
+    padding: 0.1rem;
+    text-align: center;
+}
+
+nav a {
+    margin: 0.1rem;
+    color: var(--dark-grey);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--rose-gold);
+}
+
+section {
+    padding: 4rem, 2rem;
+    max-width: 1000px;
+    margin: 2rem;
+}
+
+
+section h2 {
+    font-size: 2rem;
+    color: var(--rose-gold);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--silver);
+}
+
+ul {
+    list-style: square;
+    padding-left: 2rem;
+}
+
+a {
+    color: var(--rose-gold);
+}
+
+footer {
+    background: var(--dark-grey);
+    color: var(--light-grey);
+    text-align: center;
+    padding: 2rem, 1rem;
+}
+
+/* Fade-in animations */
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+}
+
+.fade in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Project Gallery Styling*/
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1 fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: var(--white);
+    border: 1px solid var(--silver);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(183,110,121,0.3);
+}
+
+.project-card h3 {
+    color: var(--rose-gold);
+    margin-bottom: 0.5rem;
+}

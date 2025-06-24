@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rashi Mishra | Software Development Engineer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Rashi Mishra</h1>
+      <p>Software Development Engineer | BCA Graduate | Tech Enthusiast</p>
+    </header>
+    <nav>
+      <a href="#about">About Me | </a> <a href="#skills">Skills | </a>
+      <a href="#certificates">Certificates | </a>
+      <a href="#projects">Projects | </a> <a href="#resume">Resume | </a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm Rashi Mishra, a future software development engineer with strong
+        foundation in Java, Python, C/C++, web development and data
+        structures.I'm passionate about building scalable applications and
+        solving complex problems through technology.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java, Python, JavaScript</li>
+        <li>HTML, CSS Git & GitHub</li>
+        <li>SQL, Excel, Data Analysis</li>
+        <li>Object-Oriented Programming</li>
+        <li>Software Development Lifecycle</li>
+      </ul>
+    </section>
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <ul>
+        <li>ACCENTURE</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Student Management System</strong>: JAVA desktop application
+          with CRUD function
+        </li>
+        <li>
+          <strong>Portfolio Website</strong>: Built using HTML and CSS
+          showcasing resume and work
+        </li>
+        <li>
+          <strong>Excel Data Dashboard</strong>:  Analyzed Excel datasets using   Python and presented with visual
+          insights.
+        </li>
+        <li>
+          <strong
+            >Facial Recognition and Emoji Prediction using Machine
+            Learning</strong
+          >
+        </li>
+      </ul>  
+      
+    </section>
+
+    <section id="internships">
+      <h2>Internships</h2>
+      <ul>
+        <li>Machine Learning with AI (May 2020-June 2020)</li>
+        <li></li>
+      </ul>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>
+        <a href="google.com" target="blank" , download>View My Resume(pdf)</a>
+      </p>
+    </section>
+
+    <section id="contacts">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:m.rashi.works@gmail.cpm">m.rashi.works@gmail.com</a>
+      </p>
+      <p>Phone: <a href="+91 9115082375">+91 911-508-2375</a></p>
+      <p>
+        LinkedIn:
+        <a href="www.linkedin.com/in/rashi45">www.linkedin.com/in/rashi45</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy 2025 Rashi Mishra. Built with passion❤️</p>
+    </footer>
+  </body>
+
+  <!--Add-ons-->
+  <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-gallery"></div>
+      <div class="project-card">
+        <h3>Student Management System</h3>
+        <p>
+          JAVA desktop application with CRUD function for managing student data
+          effiiently using OOPs concepts.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>
+          This elegant portfolio website built using HTML and CSS, themed around
+          rose-gold.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Data Analysis Dashboard</h3>
+        <p>
+          Analyzed Excel datasets using Python and presented with visual
+          insights.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Facial Recognition and Emoji Prediction using Machine Learning</h3>
+        <p>
+          Analyzed datasets using Kaggle, Tensorflow and presented through data
+          visualisations.
+        </p>
+      </div>
+
+      <!-- Animation Script-->
+     <script>
+    const sections = document.querySelectorAll(section);
+    const options = {
+      threshold: 0.1,
+    };
+
+    const Observer = new IntersectionObserver(function (entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => {
+      section.classList.add("fade");
+      observer.observe(section);
+    });
+     </script>
+    
+</html>
